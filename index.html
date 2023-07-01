@@ -3,9 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<script>
-		// TODO: create a handler
+	let setSearchEngine = function(SearchEngineSelection){
+		console.log("Function loading")
+	};
     window.addEventListener("load", function(){
-        // TODO: register the handler
+        let button = document.getElementById("Go");
+		 button.addEventListener("click", function() {
+         let input = document.getElementById("language");
+         console.log(input.value);
     });
 	</script>
 </head>
@@ -18,7 +23,7 @@
    <label>Duck Duck go<input type="radio" name="engine" value="duck duck go"></label>
    <label>Bing<input type="radio" name="engine" value="bing"></label>
    <lable>Ask<input type="radio" name="engine" value="ask"></lable>
-   <button> <value="Go"> Submit</button>
+   <button id="Go"> Submit</button>
 	</form>
 
 </body>
